@@ -1,0 +1,116 @@
+
+.onboarding-page {
+  display: flex;
+  justify-content: center;
+  /* background: #DF9BB1; */
+  min-height: 100vh;
+  /* font-family: poppins; */
+  /* background-image: url(); */
+}
+
+.bg{
+    /* width: 100%; */
+    position: absolute;
+    z-index: -1;
+}
+
+.content-wrapper {
+      position: absolute;
+    z-index: 2;
+  width: 100%;
+  max-width: 400px;
+  /* padding: 60px 30px; */
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.onboarding-title {
+  color: #000;
+font-family: poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.input-container {
+  margin-bottom: 30px;
+}
+
+.name-field {
+  width: 100%;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 24px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.name-field::placeholder {
+  color: #999;
+}
+
+.age-selection-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.age-option-btn {
+  width: 100%;
+  padding: 18px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+  transition: all 0.2s ease;
+}
+
+.age-option-btn.selected {
+  background-color: #b03a5b;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(176, 58, 91, 0.25);
+}
+
+.submit-btn {
+  margin-top: auto;
+  width: 100%;
+  padding: 20px;
+  background-color: #b03a5b;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+}
+
+/* Change look when button is actually enabled */
+.submit-btn:not(:disabled) {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #b03a5b; /* Solid color */
+  box-shadow: 0 4px 15px rgba(176, 58, 91, 0.4);
+}
+
+.submit-btn:not(:disabled):hover {
+  background-color: #8e2e49; /* Darker shade on hover */
+}

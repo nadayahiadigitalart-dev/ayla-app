@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import Home from './pages/Home';
 import Signin from './pages/Signin';
+import Onboarding from './pages/Onboarding';
 
 
 
@@ -11,7 +12,9 @@ import Signin from './pages/Signin';
     return ( 
         <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Signin />} />
+            {/* <Route path='/' element={<Signin />} /> */}
+            <Route path='/' element={<Onboarding />} />
+
            
           
            
