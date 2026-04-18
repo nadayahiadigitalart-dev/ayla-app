@@ -4,6 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from './pages/Home';
 import Signin from './pages/Signin';
 import Onboarding from './pages/Onboarding';
+import Onboarding2 from './pages/Onboarding2';
+import Onboarding3 from './pages/Onboarding3';
+import Signup from './pages/Signup';
+import Verify from './pages/Verify';
+
 
 
 
@@ -12,8 +17,15 @@ import Onboarding from './pages/Onboarding';
     return ( 
         <BrowserRouter>
         <Routes>
-            {/* <Route path='/' element={<Signin />} /> */}
             <Route path='/' element={<Onboarding />} />
+            <Route path='/onboarding2' element={<Onboarding2 />} />
+            <Route path='/onboarding3' element={<Onboarding3 />} />
+            <Route path='/signin' element={<Signin />} />
+            <Route path='/signup' element={<Signup />} />
+            <Route path='/verify' element={<Verify />} />
+
+
+
 
            
           

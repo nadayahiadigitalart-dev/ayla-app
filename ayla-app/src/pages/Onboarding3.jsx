@@ -4,11 +4,11 @@ import './Onboarding.css';
 import on_bg from '../assets/onboardingbg.svg';
 import { Link } from 'react-router-dom';
 
-const Onboarding = () => {
-  const [name, setName] = useState('');
+const Onboarding3 = () => {
+
   const [selectedAge, setSelectedAge] = useState(null);
 
-  const ageRanges = ['1-3 years', '3-6 years', '6-9 years', '9-12 years'];
+  const ageRanges = ["5 min/day", "10 min/day", "30 min/day", "1 hour/day"];
 
 
 
@@ -18,19 +18,12 @@ const Onboarding = () => {
         
       <div className="content_container">
             <br></br>
+             <div className="content_container">
+            <br></br>
         <p className="onboarding-title">
-          Add your children name &<br /> Choose their age
+          Whats you daily learning goal?
         </p>
-
-        <div className="input-container">
-          <input
-            type="text"
-            placeholder="Example: Sara"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="name-field"
-          />
-        </div>
+      
 
         <div className="age-selection-group">
           {ageRanges.map((range) => (
@@ -50,19 +43,20 @@ const Onboarding = () => {
 >
   Continue
 </button> */}
-<Link to='/onboarding2'>
-
+<Link to='/signin'>
 <button 
   className="submit-btn" 
-  disabled={!name.trim() || !selectedAge}
-  onClick={() => console.log("Form Submitted:", { name, selectedAge })}
+  disabled={!selectedAge}
+  onClick={() => console.log("Form Submitted:", { selectedAge })}
 >
   Continue
 </button>
 </Link>
+</div>
+
       </div>
     </div>
   );
 };
 
-export default Onboarding;
+export default Onboarding3;
