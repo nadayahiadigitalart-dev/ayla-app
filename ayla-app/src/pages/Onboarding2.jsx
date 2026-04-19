@@ -43,7 +43,7 @@ const Onboarding2 = () => {
 >
   Continue
 </button> */}
-<Link to='/onboarding3'>
+<Link to='/onboarding3' style={{ textDecoration: 'none' }} >
 <button 
   className="submit-btn" 
   disabled={!selectedAge}

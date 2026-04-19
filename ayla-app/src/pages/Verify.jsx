@@ -1,7 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Supabase as supabase } from '../Supabase';
 
+import illustration from '../assets/bg-sign.svg';
+
+
 import './Verify.css';
+import { Link } from 'react-router-dom';
 
 const Verify = () => {
   const [otp, setOtp] = useState(['', '', '', '']);
@@ -50,6 +54,8 @@ const Verify = () => {
 
   return (
     <div className="verify-container">
+              <img className=''  src={illustration} alt="Illustration"  />
+      
       <div className="verify-content">
         <h1 className="verify-title">Verify</h1>
 
@@ -77,10 +83,12 @@ const Verify = () => {
         <div className="resend-section">
           <p>Didn't receive code? <button className="resend-link">Resend it</button></p>
         </div>
+                   <Link to='/ready' style={{ textDecoration: 'none' }}>
 
         <button className="verify-btn" disabled={!isComplete}>
           Verify
         </button>
+        </Link>
       </div>
     </div>
   );

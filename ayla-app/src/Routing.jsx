@@ -8,6 +8,8 @@ import Onboarding2 from './pages/Onboarding2';
 import Onboarding3 from './pages/Onboarding3';
 import Signup from './pages/Signup';
 import Verify from './pages/Verify';
+import ReadyScreen from './pages/Readyscreen';
+import Home from './pages/Home';
 
 
 
@@ -23,6 +25,10 @@ import Verify from './pages/Verify';
             <Route path='/signin' element={<Signin />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/verify' element={<Verify />} />
+            <Route path='/ready' element={<ReadyScreen />} />
+            <Route path='/home' element={<Home />} />
+
+
 
 
 

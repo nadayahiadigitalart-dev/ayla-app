@@ -5,6 +5,9 @@ import { useState } from 'react';
 import './Signin.css';
 import { Link } from 'react-router-dom';
 
+import illustration from '../assets/bg-sign.svg';
+
+
 const Signin = () => {
 
         const [email, setEmail] = useState('');
@@ -22,15 +25,17 @@ const Signin = () => {
 
   
     <div className="container">
+              <img className=''  src={illustration} alt="Illustration"  />
+      
      
-      <div className="image-header">
+      {/* <div className="image-header">
         <div className="wave-background"></div>
         <img 
           src="character-url-here.png" 
           alt="Illustration" 
           className="character-img" 
         />
-      </div>
+      </div> */}
 
       
       <div className="form-content">

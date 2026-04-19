@@ -2,6 +2,8 @@ body{
     /* width-min: 360px; */
     min-width: 360px;
     max-width: 480px;
+    /* max-height:956px ; */
+    /* height: 100vh; */
     overflow-x: hidden;
 
 }

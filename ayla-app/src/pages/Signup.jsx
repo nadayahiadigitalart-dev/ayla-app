@@ -64,8 +64,10 @@ const Signup = () => {
                     </div>
 
                    
+                            <Link to='/Verify' style={{ textDecoration: 'none' }}>
                   
         <button className="btn-next">Sign up</button>
+        </Link>
 
         <div className="divider">
           <span>or continue with</span>

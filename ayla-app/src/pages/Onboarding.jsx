@@ -50,7 +50,7 @@ const Onboarding = () => {
 >
   Continue
 </button> */}
-<Link to='/onboarding2'>
+<Link to='/onboarding2' style={{ textDecoration: 'none' }} >
 
 <button 
   className="submit-btn" 
