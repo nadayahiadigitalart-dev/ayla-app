@@ -7,6 +7,10 @@ import arrow from '../assets/arrow.svg';
 import homebg from '../assets/homebg.svg';
 import baby from '../assets/baby_.png';
 import play from '../assets/play.svg';
+import babyImage from '../assets/babyimg.svg';
+import parkImg from '../assets/park.png';
+import deviceImg from '../assets/ImageWithFallback.png';
+import strollerImg from '../assets/ImageWithFallback-1.png'; 
 
 
 
@@ -16,6 +20,14 @@ import Navbar from '../components/Navbar';
 
 
 const Home = () => {
+
+      const products = [
+        { id: 1, name: 'Smart Baby Device', price: '2,500EGP', rating: '4.8', img: deviceImg },
+        { id: 2, name: 'Comfort Stroller', price: '3,500EGP', rating: '4.8', img: strollerImg }
+      ];
+    
+
+
     return ( <>
 
     <section className='home'>
@@ -73,18 +85,80 @@ const Home = () => {
             </div>
         </section>
 
-         <section className='podcast'>
-            <p className='mf'>What would you do in this situation</p>
-            <p className='sub_f'>2 of 3 Completed</p>
-            <div className='podcast_row'>
-                <div className='_col'>
-                   
-                </div>
-                <img className='' src={play} alt=''/>
-            </div>
-        </section>
-
         
+
+        <div className="expert-container">
+      <h2 className="section-title">Talk to Parenting Experts</h2>
+      
+      <div className="expert-card">
+       
+        <img src={babyImage} alt="Baby playing" className="card-bg-image" />
+        
+       
+        <div className="card-content">
+          {/* <h3 className="card-title">Ask Parenting Experts</h3> */}
+          <p className="card-description">
+            Get answers from pediatricians, psychologists, and child development specialists
+          </p>
+          
+          <ul className="benefits-list">
+            <li className='prem_check' >Ask personal parenting questions</li>
+            <li className='prem_check'>Receive expert guidance</li>
+            <li className='prem_check' >Learn from other parents' questions</li>
+          </ul>
+          
+          <button className="premium-btn">
+            Subscribe to Premium
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div className="section-wrapper">
+      <div className="section-header">
+        <h2 className="main-title">Discover Nearby</h2>
+        <span className="view-all">View all ❯</span>
+      </div>
+      <p className="subtitle">Sunny park is near you, Do you want to see details?</p>
+      
+      <div className="nearby-card">
+        <img src={parkImg} alt="Sunny Park" className="nearby-img" />
+        <div className="nearby-info">
+          <h3 className="location-name">Sunny Park Playground</h3>
+          <div className="nearby-meta">
+            <span className="rating">⭐ 4.8</span>
+            <span className="distance">📍 0.8 km</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div className="section-wrapper">
+      <div className="section-header">
+        <h2 className="main-title">Recommended Products</h2>
+        <span className="view-all">View all ❯</span>
+      </div>
+      
+      <div className="products-grid">
+        {products.map(product => (
+          <div key={product.id} className="product-card">
+            <div className="product-img-container">
+               <img src={product.img} alt={product.name} className="product-img" />
+            </div>
+            <div className="product-info">
+              <h3 className="product-name">{product.name}</h3>
+              <div className="product-meta">
+                <span className="price">{product.price}</span>
+                <span className="rating">⭐ {product.rating}</span>
+              </div>
+              <button className="read-more-btn">Read More ➔</button>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
 
 
 

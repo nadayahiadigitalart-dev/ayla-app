@@ -1,0 +1,150 @@
+.parenting-page {
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a4a68;
+}
+
+.header-title {
+  color: #b03a5b;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 25px;
+}
+
+/* Stage Card & Progress Bar */
+.stage-card {
+  background-color: #fffdf2;
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid #f9f2d1;
+  margin-bottom: 20px;
+}
+
+.card-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.card-link {
+  color: #b03a5b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.progress-bar-container {
+  height: 12px;
+  background-color: #fcefd4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  width: 35%; /* Progress indicator */
+  height: 100%;
+  background: linear-gradient(to right, #b03a5b, #e57a97);
+}
+
+/* Info List */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.info-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.arrow {
+  color: #b03a5b;
+}
+
+/* Situations Grid */
+.situations-section {
+  background-color: #d6899e; /* Pink section background */
+  margin: 0 -20px;
+  padding: 20px;
+  color: white;
+}
+
+.section-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.situations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.situation-card {
+  background-color: #fffdf2;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #4a4a68;
+  height: 100px;
+}
+
+.situation-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #b03a5b;
+}
+
+.situation-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Awareness Section */
+.awareness-section {
+  padding-top: 30px;
+}
+
+.awareness-title {
+  color: #b03a5b;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.awareness-text {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.support-list {
+  font-size: 14px;
+}
+
+.support-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.support-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.support-list li {
+  margin-bottom: 5px;
+}

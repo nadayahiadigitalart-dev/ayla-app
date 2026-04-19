@@ -175,7 +175,7 @@ margin: 0px;
     flex-direction: column;
     justify-content: space-between;
     /* align-items: center; */
-    width: 90%;
+    width: 82%;
     gap: 16px;
     margin-top: 50px;
     margin-left: 22px;
@@ -218,6 +218,252 @@ font-size: 14px;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
+}
+
+
+.expert-container {
+  padding: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.section-title {
+  font-size: 22px;
+  color: #4a4a68; /* Darker blue/grey from your image */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.expert-card {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden; /* Clips the image to the border radius */
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: #f5f3ef; /* Light beige base */
+}
+
+.card-bg-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60%; /* Only covers the right side */
+  object-fit: cover;
+  z-index: 1;
+  /* Fades the image into the beige background on the left */
+  mask-image: linear-gradient(to left, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to left, black 60%, transparent 100%);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  width: 70%; /* Overlaps part of the image */
+  padding: 25px;
+}
+
+.card-title {
+  font-size: 18px;
+  color: #5d5d7e;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.card-description {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  /* margin-bottom: 20px; */
+  /* margin: 0px; */
+
+
+}
+
+.prem_check{
+  color: #000;
+font-family: Poppins;
+font-size: 1.625rem;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+
+.benefits-list li {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* Custom Checkmark Icon */
+.benefits-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #333;
+  font-weight: bold;
+}
+
+.premium-btn {
+  background-color: #b03a5b;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(176, 58, 91, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.premium-btn:active {
+  transform: scale(0.95);
+}
+
+
+.section-wrapper {
+  /* padding: 20px; */
+  /* max-width: 480px; */
+  margin: 0 auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.main-title {
+  font-size: 20px;
+  color: #4a4a68;
+  font-weight: 700;
+}
+
+.view-all {
+  color: #b03a5b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.subtitle {
+  color: #b03a5b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Nearby Card Styling */
+.nearby-card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.nearby-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.nearby-info {
+  padding: 15px;
+}
+
+.location-name {
+  font-size: 16px;
+  color: #4a4a68;
+  margin-bottom: 10px;
+}
+
+.nearby-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Products Grid Styling */
+.products-grid {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto; /* Allows horizontal swipe on mobile */
+  padding-bottom: 10px;
+}
+
+.product-card {
+  min-width: 180px;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  flex: 1;
+}
+
+.product-img-container {
+  height: 140px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.product-info {
+  padding: 12px;
+}
+
+.product-name {
+  font-size: 14px;
+  color: #4a4a68;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 700;
+  color: #333;
+}
+
+.read-more-btn {
+  width: 100%;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  background: #fdf0f3;
+  color: #b03a5b;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 
