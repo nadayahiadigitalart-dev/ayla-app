@@ -5,13 +5,17 @@ import logo_ayla_app from '../assets/logo_ayla_app.svg';
 import profile from '../assets/profile.png';
 import menu from '../assets/menu.svg';
 import arrow from '../assets/arrow.svg';
-import parentbg from '../assets/homebg.svg';
+import parentbg from '../assets/parenting.svg';
 import ic1 from '../assets/cup-line.svg';
 import ic2 from '../assets/emotion-line.svg';
 import ic3 from '../assets/brain.svg';
 import ic4 from '../assets/speak-ai-line.svg';
 import ic5 from '../assets/magic-line.svg';
 import ic6 from '../assets/zzz-line.svg';
+
+import smartActImg from '../assets/smartgame.png';
+import bodyMoveImg from '../assets/boyy.png';
+import creativeActImg from '../assets/creativeact.png';
 
 import './Parenting.css';
 
@@ -24,6 +28,27 @@ const Parenting = () => {
     { id: 4, title: 'Communication', icon: ic4 },
     { id: 5, title: 'Sleep', icon: ic5 },
     { id: 6, title: 'Social Behaviour', icon: ic6 }
+  ];
+
+  const activities = [
+    {
+      id: 1,
+      title: 'Smart Activities',
+      description: 'Encourage creativity and improve hand coordination.',
+      image: smartActImg,
+    },
+    {
+      id: 2,
+      title: 'Body Movement',
+      description: 'Running and climbing help build strength and coordination.',
+      image: bodyMoveImg,
+    },
+    {
+      id: 3,
+      title: 'Creative activities',
+      description: 'Encourage creativity and improve hand coordination.',
+      image: creativeActImg,
+    },
   ];
     return ( <>
 
@@ -39,14 +64,15 @@ const Parenting = () => {
 
    <div className="parenting_page">
       <header className="page_header">
-        <h1 className="header_title">Yassin is now a Toddler (1-3 years)</h1>
+        <p className="header_title">Yassin is now a Toddler (1-3 years)</p>
         <p className="header_subtitle">
           Your child is learning independence, communication, and emotions.
         </p>
       </header>
 
       <div className="stage_card">
-        <h3 className="card_label">Toddler Stage:</h3>
+        <p className="card_label"
+        >Toddler Stage:</p>
         <p className="card_link">Learn About Your Toddler</p>
         <div className="progress_bar_container">
           <div className="progress_fill"></div>
@@ -65,7 +91,7 @@ const Parenting = () => {
         <div className="situations_grid">
           {commonSituations.map(item => (
             <div key={item.id} className="situation_card">
-              <span className="situation_icon">{item.icon}</span>
+              <img className="situation_icon" src={item.icon} alt={item.title} />
               <p className="situation_title">{item.title}</p>
             </div>
           ))}
@@ -87,6 +113,29 @@ const Parenting = () => {
           </ul>
         </div>
       </section>
+
+     <section className="activities_container">
+      <h2 className="section_title_main">Suggested Activities to do with kid</h2>
+      
+      <div className="activities_list">
+        {activities.map(activity => (
+          <div key={activity.id} className="activity_card">
+            <div className="activity_img_container">
+              <img src={activity.image} alt={activity.title} className="activity_img" />
+            </div>
+            <div className="activity_details">
+              <h3 className="activity_card_title">{activity.title}</h3>
+              <p className="activity_description">{activity.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+    <br></br>
+    <br></br>
+    <br></br>
+
+
     </div>
 
     

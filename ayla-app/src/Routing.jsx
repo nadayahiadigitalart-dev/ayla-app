@@ -11,6 +11,7 @@ import Verify from './pages/Verify';
 import ReadyScreen from './pages/Readyscreen';
 import Home from './pages/Home';
 import Parenting from './pages/Parenting';
+import Discover from './pages/Discover';
 
 
 
@@ -29,6 +30,8 @@ import Parenting from './pages/Parenting';
             <Route path='/ready' element={<ReadyScreen />} />
             <Route path='/home' element={<Home />} />
             <Route path='/parenting' element={<Parenting />} />
+            <Route path='/discover' element={<Discover />} />
+
 
 
 
