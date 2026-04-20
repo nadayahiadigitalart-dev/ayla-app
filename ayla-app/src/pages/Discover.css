@@ -1,5 +1,5 @@
 .discover_page {
-  padding-bottom: 80px; /* Space for fixed Navbar */
+  padding-bottom: 80px; 
   background: linear-gradient(180deg, #fff 0%, #f9e1e8 100%);
   min-height: 100vh;
 }
@@ -32,7 +32,7 @@
   font-size: 16px;
 }
 
-/* Category Grid */
+
 .category_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,6 +40,10 @@
 }
 
 .category_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: white;
   border-radius: 20px;
   padding: 20px;
@@ -48,9 +52,13 @@
 }
 
 .cat_icon { font-size: 24px; display: block; margin-bottom: 10px; }
-.cat_name { font-size: 14px; font-weight: 600; color: #4a4a68; }
+.cat_name { font-size: 14px;
+   font-weight: 500;
+    color: #000000;
+   font-family: poppins;
+  margin: 0px; }
 
-/* Nearby Section */
+
 .nearby_section, .products_section {
   padding: 20px;
 }
@@ -78,7 +86,7 @@
 .location_name { font-size: 16px; margin-bottom: 5px; }
 .location_meta { display: flex; justify-content: space-between; font-size: 14px; }
 
-/* Products Section */
+
 .products_row {
   display: flex;
   gap: 15px;

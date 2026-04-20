@@ -106,9 +106,9 @@ const Parenting = () => {
         <div className="support_list">
           <p className="support_label">Signs your toddler may need extra support:</p>
           <ul>
-            <li>• no words by age two</li>
-            <li>• no eye contact</li>
-            <li>• no response to name</li>
+            <li> no words by age two</li>
+            <li> no eye contact</li>
+            <li> no response to name</li>
             <li>• repetitive unusual behaviors</li>
           </ul>
         </div>

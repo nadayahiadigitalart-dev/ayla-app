@@ -12,6 +12,7 @@ import ReadyScreen from './pages/Readyscreen';
 import Home from './pages/Home';
 import Parenting from './pages/Parenting';
 import Discover from './pages/Discover';
+import Playgrounds from './pages/Playgrounds';
 
 
 
@@ -31,6 +32,8 @@ import Discover from './pages/Discover';
             <Route path='/home' element={<Home />} />
             <Route path='/parenting' element={<Parenting />} />
             <Route path='/discover' element={<Discover />} />
+            <Route path='/playgrounds' element={<Playgrounds />} />
+
 
 
 

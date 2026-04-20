@@ -162,14 +162,14 @@ line-height: 130%;
 
 .activities_container {
   padding: 20px;
-  max-width: 480px; /* Aligns with your other sections */
+  max-width: 480px; 
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .section_title_main {
   font-size: 18px;
-  color: #a3325a; /* Matching your berry/mauve brand color */
+  color: #a3325a; 
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -177,27 +177,27 @@ line-height: 130%;
 .activities_list {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Creates consistent spacing between cards */
+  gap: 15px; 
 }
 
 .activity_card {
   background-color: white;
-  border-radius: 20px; /* Modern rounded corners */
-  overflow: hidden; /* Clips the image to the card radius */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Matches other clean shadows */
+  border-radius: 20px; 
+  overflow: hidden; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
   display: flex;
   flex-direction: column;
 }
 
 .activity_img_container {
   width: 100%;
-  height: 200px; /* Fixed height for image area */
+  height: 200px; 
 }
 
 .activity_img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Important to keep images from stretching */
+  object-fit: cover; 
 }
 
 .activity_details {
@@ -205,14 +205,21 @@ line-height: 130%;
 }
 
 .activity_card_title {
-  font-size: 16px;
-  color: #a3325a; /* Pink for card titles */
+  /* font-size: 16px;
+  color: #a3325a; 
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 600; */
+
+  color: var(--main-color, #AD335A);
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 0.9375rem; 
 }
 
 .activity_description {
   font-size: 13px;
-  color: #4a4a68; /* Grey for description text */
+  color: #4a4a68; 
   line-height: 1.4;
 }

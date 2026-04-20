@@ -1,0 +1,100 @@
+.playgrounds_page {
+  padding: 20px;
+  padding-bottom: 90px;
+  background-color: #f9f2f5; 
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.places_header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.back_btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #a3325a;
+  cursor: pointer;
+}
+
+.places_title {
+  font-size: 20px;
+  color: #4a4a68;
+  font-weight: 700;
+}
+
+
+.filter_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.near_by_filter {
+  background-color: #fceef2;
+  color: #a3325a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+
+.place_card {
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.place_img_container {
+  width: 100%;
+  height: 160px;
+}
+
+.place_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place_info {
+  padding: 15px 20px;
+}
+
+.place_name {
+  font-size: 16px;
+  color: #2d2d4d;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.place_meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.place_location_tag {
+  background-color: #fceef2;
+  color: #a3325a;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.place_distance {
+  font-size: 14px;
+  color: #4a4a68;
+}
