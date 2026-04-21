@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Supabase } from '../Supabase'; 
-import { useNavigate } from 'react-router-dom';
+import { Links, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './Playgrounds.css';
 
 
 import kidsStationImg from '../assets/park.png'; 
+import filterIcon from '../assets/filter.svg';
 
 const Playgrounds = () => {
   const [places, setPlaces] = useState([]);
@@ -19,11 +20,13 @@ const Playgrounds = () => {
 
     const { data, error } = await Supabase
       .from('Discover')
-      .select('title, km, locate')
+    //   .select('title, km, locate')
+    .select('*')
       .eq('category', 'kid-friendly'); 
 
     if (error) console.error('Error fetching data:', error);
     else setPlaces(data);
+    
   };
 
   return (
@@ -37,14 +40,20 @@ const Playgrounds = () => {
       
       <div className="filter_container">
         <button className="near_by_filter">
-          Near by <span className="filter_icon">⚙️</span>
+          Near by <img className="filter_icon" src={filterIcon} alt="Filter" />
         </button>
       </div>
 
       
       <div className="places_list">
         {places.map((place, index) => (
-          <div key={index} className="place_card">
+          <Links to={`/placedetails/${place.title}`} className="place_link" >
+          <div key={index} 
+          className="place_card"
+          
+          
+          >
+            
             <div className="place_img_container">
               <img src={kidsStationImg} alt={place.title} className="place_img" />
             </div>
@@ -52,12 +61,17 @@ const Playgrounds = () => {
               <h3 className="place_name">{place.title}</h3>
               <div className="place_meta">
                 <span className="place_location_tag">{place.locate}</span>
-                <span className="place_distance">📍 {place.km} km</span>
+                <div className="place_distance">
+
+                     {place.km} km</div>
               </div>
             </div>
           </div>
+          </Links>
         ))}
       </div>
+
+     
 
       <Navbar />
     </div>

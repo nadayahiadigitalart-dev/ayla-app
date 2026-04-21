@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import Parenting from './pages/Parenting';
 import Discover from './pages/Discover';
 import Playgrounds from './pages/Playgrounds';
+import PlaceDetails from './pages/PlaceDetails';
 
 
 
@@ -33,6 +34,8 @@ import Playgrounds from './pages/Playgrounds';
             <Route path='/parenting' element={<Parenting />} />
             <Route path='/discover' element={<Discover />} />
             <Route path='/playgrounds' element={<Playgrounds />} />
+            <Route path='/placedetails/:title' element={<PlaceDetails />} />
+            
 
 
 

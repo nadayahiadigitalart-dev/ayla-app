@@ -1,0 +1,79 @@
+.details_page {
+  background-color: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero_image_container {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.hero_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.back_btn_white {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.details_content {
+  margin-top: -30px;
+  background: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.details_title {
+  color: #AD335A;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.details_description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.info_box {
+  background-color: #fceef2;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.info_item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #4a4a68;
+}
+
+.section_label { color: #AD335A; font-size: 16px; margin-bottom: 15px; }
+.section_label_center { text-align: center; color: #AD335A; font-size: 16px; margin-top: 30px; }
+
+.review_card {
+  background: #f9f9f9;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
