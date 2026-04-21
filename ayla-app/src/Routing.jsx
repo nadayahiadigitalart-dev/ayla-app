@@ -14,6 +14,10 @@ import Parenting from './pages/Parenting';
 import Discover from './pages/Discover';
 import Playgrounds from './pages/Playgrounds';
 import PlaceDetails from './pages/PlaceDetails';
+import Situation1 from './pages/Situation1';
+import Situation1_2 from './pages/Situation1_2';
+import Situation1_3 from './pages/Situation1_3';
+import Situation1_4 from './pages/Situation1_4';
 
 
 
@@ -35,6 +39,13 @@ import PlaceDetails from './pages/PlaceDetails';
             <Route path='/discover' element={<Discover />} />
             <Route path='/playgrounds' element={<Playgrounds />} />
             <Route path='/placedetails/:title' element={<PlaceDetails />} />
+            <Route path='/situation1' element={<Situation1 />} />
+            <Route path='/situation1_2' element={<Situation1_2 />} />
+            <Route path='/situation1_3' element={<Situation1_3 />} />
+            <Route path='/situation1_4' element={<Situation1_4 />} /> 
+
+
+
             
 
 

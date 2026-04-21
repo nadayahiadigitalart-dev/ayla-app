@@ -1,0 +1,190 @@
+.situ{
+    position: absolute;
+    top: 0%;
+    z-index: -5;
+    width: 100%;
+
+}
+
+.situ_bg{
+    margin-top: 440px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.situ_bg_3{
+    margin-top: 360px;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+
+.animate_font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color: #AD335A; 
+  line-height: 1.6;
+  min-height: 3em;
+  color: var(--color-title-2, #5A5A74);
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; /* 1.3rem */
+position: absolute;
+z-index: 2;
+margin-top: 610px;
+margin-left: 20px;
+width: 80%;
+}
+
+.word-fade {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  margin-right: 0.25em;
+
+  /* position: absolute;
+  z-index: 2; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+.buttonn{
+    display: flex;
+width: 10.25rem;
+height: 3.25rem;
+padding: 1rem 1.5rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+
+border-radius: 1.9375rem;
+background: var(--main-color, #AD335A);
+box-shadow: 0 4px 8.3px 0 rgba(0, 0, 0, 0.16);
+
+color: #FFF;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+position: absolute;
+z-index: 2;
+
+margin-top: 750px;
+margin-left: 20px;
+}
+
+.col_options{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.situation1_page{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.replay_text{
+    color: #AD335A;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+
+}
+
+.animate_font2{
+    color: var(--color-title-2, #5A5A74);
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; 
+}
+
+
+
+.replay_sit{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.situ_col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 16px;
+    margin-top: 500px;
+}
+
+.col_options{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 20px;
+
+}
+
+.abc{
+    color: #000;
+font-family: Poppins;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.option{
+    /* color: #AD335A; */
+    color: #3C3C3C;
+font-family: Poppins;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.option_card{
+     display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+        border-radius: 1.25rem;
+border: 1px solid #AD335A;
+background: #FEFFEA;
+box-shadow: 0 4px 11.8px 0 rgba(0, 0, 0, 0.14);
+
+display: flex;
+padding: 0.75rem 1.25rem;
+justify-content: center;
+align-items: center;
+gap: 1.0625rem;
+align-self: stretch;
+
+width: 84%;
+}
+
+
