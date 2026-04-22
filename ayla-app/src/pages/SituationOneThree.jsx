@@ -7,10 +7,10 @@ import situ from '../assets/bg_situ.svg';
 import replay from '../assets/replay.svg';
 import situationImg from '../assets/situation1_2.svg';
 
-import './Situation1.css';
+import './SituationOne.css';
 
 
-const Situation1_3 = () => {
+const SituationOneThree = () => {
 
 
     return ( <>
@@ -63,4 +63,4 @@ const Situation1_3 = () => {
     </> );
 }
  
-export default Situation1_3;
+export default SituationOneThree;

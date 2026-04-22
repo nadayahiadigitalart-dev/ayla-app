@@ -125,3 +125,188 @@ h3 {
   color: #AD335A;
   font-weight: 500;
 }
+
+/* Container for the whole page */
+.community_page {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 100px; /* Space for the bottom navbar */
+}
+
+/* Header Toggle (Experts vs Moms Stories) */
+.toggle_container {
+  display: flex;
+  background-color: #FDF2F5; /* Very light pink background */
+  border: 1.5px solid #AD335A;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.toggle_btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  color: #AD335A;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle_btn.active {
+  background-color: #AD335A;
+  color: #ffffff;
+}
+
+/* Section Headings */
+h3 {
+  color: #8C8CA0;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Question of the Day Card */
+.question_card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(173, 51, 90, 0.08); /* Berry-tinted shadow */
+  margin-bottom: 35px;
+  border: 1px solid #FCEEF2;
+}
+
+.question_card p {
+  color: #4A4A68;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Input Wrapper for Creating Posts */
+.input_wrapper {
+  background-color: #F5F5F7;
+  border-radius: 15px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.input_wrapper input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #4A4A68;
+  font-size: 14px;
+}
+
+.input_icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.input_img_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.input_img_icon:hover {
+  transform: scale(1.15);
+}
+
+/* Story/Post Card Design */
+.story_card, .post_card_small {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #AD335A; /* Your primary brand accent */
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar_small {
+  width: 32px;
+  height: 32px;
+  background-color: #E2E2E2;
+  border-radius: 50%;
+}
+
+.author_name {
+  color: #AD335A;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.tag_ask {
+  background-color: #FDF2F5;
+  color: #AD335A;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-transform: lowercase;
+}
+
+.story_text, .post_content {
+  color: #4A4A68;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  white-space: pre-wrap; /* Keeps line breaks from user input */
+}
+
+/* Footer of Cards (Likes/Comments) */
+.card_footer {
+  display: flex;
+  gap: 25px;
+  border-top: 1px solid #F5F5F7;
+  padding-top: 12px;
+}
+
+.footer_item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #AD335A;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.footer_icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Empty State / Loading */
+.loading_text {
+  text-align: center;
+  color: #AD335A;
+  padding: 40px;
+  font-style: italic;
+}

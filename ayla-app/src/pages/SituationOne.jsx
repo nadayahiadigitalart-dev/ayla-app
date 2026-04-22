@@ -1,22 +1,19 @@
 // import React, { PureComponent } from 'react';
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
-import situationImg from '../assets/situation1_2.svg';
+import situationImg from '../assets/bg_situation.svg';
 import situ from '../assets/bg_situ.svg';
 
-import './Situation1.css';
+import './SituationOne.css';
 
-
-const Situation1_2 = () => {
+const SituationOne = () => {
 
   const navigate = useNavigate(); 
-  const fullText = "But your toddler is refusing to take a single bite and is asking for a snack instead. |  | You’re tired and just want them to eat. What will you say?";  
+  const fullText = "It’s lunch time! You’ve made a healthy meal for your toddler..";
   const words = fullText.split(" ");
-  
   const [displayedWords, setDisplayedWords] = useState([]);
   const [startTyping, setStartTyping] = useState(false);
-  const [showButton, setShowButton] = useState(false); // 1. New state for the button
 
   useEffect(() => {
     const startTimer = setTimeout(() => {
@@ -28,21 +25,22 @@ const Situation1_2 = () => {
   useEffect(() => {
     if (startTyping) {
       if (displayedWords.length < words.length) {
+       
         const typingTimer = setTimeout(() => {
           setDisplayedWords((prev) => [...prev, words[prev.length]]);
-        }, 150); 
+        }, 200);
         return () => clearTimeout(typingTimer);
       } else {
         
-        const buttonTimer = setTimeout(() => {
-          setShowButton(true);
-        }, 500);
-        return () => clearTimeout(buttonTimer);
+        const transitionTimer = setTimeout(() => {
+          navigate('/situation1_2'); 
+        }, 1500); 
+        return () => clearTimeout(transitionTimer);
       }
     }
-  }, [startTyping, displayedWords, words]);
+  }, [startTyping, displayedWords, words, navigate]);
 
-    return ( 
+    return ( <>
 
 
      <section className='situation1_page'>
@@ -50,31 +48,18 @@ const Situation1_2 = () => {
         <div>
           <img className='situ_bg' src={situ} alt='bg_situation' />
           <p className='animate_font'>
-          {displayedWords.map((word, index) => {
-            
-            if (word === "|") {
-              return <br key={index} />;
-            }
-            return (
+            {displayedWords.map((word, index) => (
               <span key={index} className="word-fade">
                 {word}{" "}
               </span>
-            );
-          })}
+            ))}
           </p>
-
-        
-        {showButton && (
-          <Link to="/situation1_3" className="fade-in-button"> 
-            <button className='buttonn'>See Options</button>
-          </Link>
-        )}
         </div>
       </section>
     
     
     
-     );
+    </> );
 }
  
-export default Situation1_2;
+export default SituationOne;
