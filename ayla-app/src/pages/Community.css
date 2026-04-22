@@ -1,0 +1,127 @@
+.community_page {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 80px; /* Space for Navbar */
+}
+
+/* Header Toggle */
+.toggle_container {
+  display: flex;
+  background: #fdf2f5;
+  border: 1px solid #AD335A;
+  border-radius: 25px;
+  width: 80%;
+  margin: 0 auto 30px;
+  overflow: hidden;
+}
+
+.toggle_btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: #AD335A;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.toggle_btn.active {
+  background: #AD335A;
+  color: white;
+}
+
+/* Headers */
+h3 {
+  color: #8c8ca0;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+/* Question Card */
+.question_card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(173, 51, 90, 0.1);
+  margin-bottom: 30px;
+  border: 1px solid #fceef2;
+}
+
+/* Input Bar */
+.input_wrapper {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.input_wrapper input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.input_icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon_pink { color: #AD335A; cursor: pointer; }
+
+/* General Post Cards */
+.story_card, .post_card_small {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  border-left: 5px solid #AD335A; /* Accent line from your design */
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.user_info { display: flex; align-items: center; gap: 10px; }
+
+.avatar_small {
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.author_name { color: #AD335A; font-weight: 600; font-size: 13px; }
+
+.tag_ask {
+  background: #fdf2f5;
+  color: #AD335A;
+  font-size: 10px;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.post_content, .story_text {
+  font-size: 13px;
+  color: #4a4a68;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.card_footer {
+  display: flex;
+  gap: 20px;
+  font-size: 11px;
+  color: #AD335A;
+  font-weight: 500;
+}

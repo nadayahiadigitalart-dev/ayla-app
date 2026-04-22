@@ -18,6 +18,9 @@ import Situation1 from './pages/Situation1';
 import Situation1_2 from './pages/Situation1_2';
 import Situation1_3 from './pages/Situation1_3';
 import Situation1_4 from './pages/Situation1_4';
+import FeedBack from './pages/FeedBack';
+import PodcastPage from './pages/PodcastPage';
+import Community from './pages/Community';
 
 
 
@@ -43,6 +46,12 @@ import Situation1_4 from './pages/Situation1_4';
             <Route path='/situation1_2' element={<Situation1_2 />} />
             <Route path='/situation1_3' element={<Situation1_3 />} />
             <Route path='/situation1_4' element={<Situation1_4 />} /> 
+            <Route path='/feedback' element={<FeedBack />} /> 
+            <Route path='/podcast' element={<PodcastPage />} /> 
+            <Route path='/community' element={<Community />} /> 
+
+
+
 
 
 

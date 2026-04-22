@@ -135,6 +135,7 @@ line-height: 130%;
     align-items: flex-start;
     margin-left: 16px;
     margin-top: 500px;
+    width: 86%;
 }
 
 .col_options{
@@ -186,5 +187,228 @@ align-self: stretch;
 
 width: 84%;
 }
+
+.col_sito{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 16px; */
+}
+
+.pinko{
+    color: #AD335A;
+font-family: Poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0px;
+}
+
+.fo{
+    color: #000;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+margin-bottom: 30px;
+margin-top: 10px;
+}
+
+.fo{
+    color: #000;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+margin-bottom: 30px;
+margin-top: 10px;
+}
+
+.fo2{
+     color: #000;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
+margin: 0px;
+}
+
+.row_sito_p{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 1rem;
+background: #FFE8F0;
+padding:5% 10%;
+}
+
+.row_sito_y{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+   border-radius: 1rem;
+background: #FFFCE8;
+margin-top: 20px;
+padding:5% 10%;
+
+}
+
+.two_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.ask_bu{
+   color: #FFF;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    display: flex;
+width: 11.1875rem;
+height: 3.25rem;
+/* padding: 1rem 1.5rem; */
+justify-content: center;
+align-items: center;
+gap: 1.5625rem;
+    border-radius: 1.9375rem;
+background: var(--main-color, #AD335A);
+box-shadow: 0 4px 8.3px 0 rgba(0, 0, 0, 0.16);
+}
+
+.back_bu{
+    color: #AD335A;
+font-family: Poppins;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    display: flex;
+width: 11.1875rem;
+height: 3.25rem;
+/* padding: 1rem 1.5rem; */
+justify-content: center;
+align-items: center;
+gap: 1.5625rem;
+border-radius: 1.9375rem;
+background: #FFE9F0;
+box-shadow: 0 4px 8.3px 0 rgba(0, 0, 0, 0.16);
+}
+
+
+
+
+
+
+/* feedback page */
+
+.feedback_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #fff;  */
+}
+
+.feedback_title {
+  color: #AD335A; 
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.feedback_subtitle {
+  color: #4a4a68;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.badge_container {
+  margin-bottom: 50px;
+  animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.badge_status {
+  color: #6a6a8a;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.badge_card {
+  background: #FFFCF5; /* Very light cream */
+  border: 1px solid #F7E7CE;
+  border-radius: 25px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  margin: 0 auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.03);
+}
+
+.badge_icon_wrapper {
+  /* background: #FFF; */
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.badge_img {
+  width: 50px;
+  height: 50px;
+}
+
+.badge_name {
+  color: #AD335A;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.badge_details {
+  color: #4a4a68;
+  font-size: 13px;
+}
+
+.continue_btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 16px;
+}
+
+/* Reusing your popIn animation */
+@keyframes popIn {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.feed{
+    position: absolute;
+    top: 0px;
+    z-index: -2;
+}
+
+.but{
+    
+}
+
+
 
 
