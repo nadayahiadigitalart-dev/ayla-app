@@ -1,7 +1,8 @@
 import React from 'react';
 import './Experts.css';
 
-
+import live1 from '../assets/live1.svg';
+import live2 from '../assets/live2.svg';
 import heartIcon from '../assets/heart_icon.svg';
 import messageIcon from '../assets/message_icon.svg';
 import clockIcon from '../assets/clock_icon.svg';
@@ -22,14 +23,14 @@ const Experts = () => {
       doctor: "Dr. Sarah Ahmed",
       title: "Understanding ADHD Behavior in Toddlers",
       time: "Sunday - 7:00 PM",
-      img: "/path-to-child-image.jpg"
+      img: live1
     },
     {
       id: 2,
       doctor: "Dr. Moaz Hamad",
       title: "Healthy Routines for Active Children",
       time: "Tuesday - 5:00 PM",
-      img: "/path-to-health-image.jpg"
+      img: live2
     }
   ];
 
@@ -48,7 +49,9 @@ const Experts = () => {
         <div className="sessions_wrapper">
           {sessions.map(session => (
             <div key={session.id} className="session_card">
-              <div className="session_img" style={{ backgroundImage: `url(${session.img})` }}></div>
+              <div className="session_img" >
+                  <img src={session.img} alt="img" />
+              </div>
               <div className="session_info">
                 <span className="dr_name">{session.doctor}</span>
                 <p>{session.title}</p>
@@ -96,8 +99,8 @@ const Experts = () => {
           </div>
           
           <div className="post_body">
-            <strong>My child forgets instructions quickly. Is this normal?</strong>
-            <p>
+            <p className='t' >My child forgets instructions quickly. Is this normal?</p>
+            <p className='t'>
               Children with ADHD may struggle to remember multi-step instructions because their working memory is still developing...
             </p>
             <p className="highlight_box">

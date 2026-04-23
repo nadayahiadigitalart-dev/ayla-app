@@ -91,6 +91,12 @@
   padding: 10px;
   font-style: italic;
   margin-top: 10px;
+  color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; 
 }
 
 .prem{
@@ -129,4 +135,13 @@
   height: 100%;
   object-fit: cover; /* Stretches/clips image to fill the container perfectly */
   object-position: center; /* Adjust this to 'left' if the doctor's face gets cut off */
+}
+
+.t{
+    color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 130%; 
 }

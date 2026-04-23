@@ -22,6 +22,7 @@ import FeedBack from './pages/FeedBack';
 import PodcastPage from './pages/PodcastPage';
 import Community from './pages/Community';
 import Experts from './pages/Experts';
+import Premium from './pages/Premium';
 
 
 
@@ -50,7 +51,8 @@ import Experts from './pages/Experts';
             <Route path='/feedback' element={<FeedBack />} /> 
             <Route path='/podcast' element={<PodcastPage />} /> 
             <Route path='/community' element={<Community />} /> 
-            <Route path='/experts' element={<Experts />} /> 
+            <Route path='/experts' element={<Experts />} />
+              <Route path='/premium' element={<Premium />} />
 
 
 
