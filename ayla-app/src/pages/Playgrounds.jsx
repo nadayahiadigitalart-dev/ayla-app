@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Supabase } from '../Supabase'; 
-import { Links, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import './Playgrounds.css';
 
@@ -47,7 +47,7 @@ const Playgrounds = () => {
       
       <div className="places_list">
         {places.map((place, index) => (
-          <Links to={`/placedetails/${place.title}`} className="place_link" >
+          <Link to={`/placedetails/${place.title}`} className="place_link" >
           <div key={index} 
           className="place_card"
           
@@ -67,7 +67,7 @@ const Playgrounds = () => {
               </div>
             </div>
           </div>
-          </Links>
+          </Link>
         ))}
       </div>
 

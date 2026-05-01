@@ -8,6 +8,7 @@ import messageIcon from '../assets/message_icon.svg';
 import clockIcon from '../assets/clock_icon.svg';
 import premiumBimg from '../assets/expert_banner.svg';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 const Experts = () => {
   const navigate = useNavigate();
@@ -114,6 +115,8 @@ const Experts = () => {
           </div>
         </div>
       </section>
+      <Navbar />
+
     </div>
   );
 };

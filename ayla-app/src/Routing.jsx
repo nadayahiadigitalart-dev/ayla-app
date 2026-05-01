@@ -23,6 +23,7 @@ import PodcastPage from './pages/PodcastPage';
 import Community from './pages/Community';
 import Experts from './pages/Experts';
 import Premium from './pages/Premium';
+import EatSitu from './pages/EatSitu';
 
 
 
@@ -53,6 +54,8 @@ import Premium from './pages/Premium';
             <Route path='/community' element={<Community />} /> 
             <Route path='/experts' element={<Experts />} />
               <Route path='/premium' element={<Premium />} />
+            <Route path='/eatsituations' element={<EatSitu />} />
+
 
 
 

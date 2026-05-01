@@ -18,6 +18,7 @@ import bodyMoveImg from '../assets/boyy.png';
 import creativeActImg from '../assets/creativeact.png';
 
 import './Parenting.css';
+import { Link } from 'react-router-dom';
 
 
 const Parenting = () => {
@@ -91,8 +92,10 @@ const Parenting = () => {
         <div className="situations_grid">
           {commonSituations.map(item => (
             <div key={item.id} className="situation_card">
+              <Link to={`/situation1`} className="situation_title" style={{textDecoration: "none"}} >
               <img className="situation_icon" src={item.icon} alt={item.title} />
               <p className="situation_title">{item.title}</p>
+          </Link>
             </div>
           ))}
         </div>

@@ -9,6 +9,7 @@ import heartIcon from '../assets/heart_icon.svg';
 import messageIcon from '../assets/message_icon.svg';
 
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
 
 const Community = () => {
@@ -149,6 +150,7 @@ Sometimes they don’t want to say “no”… they just want control over small
           )}
         </section>
       </div>
+      <Navbar />
     </div>
   );
 };
