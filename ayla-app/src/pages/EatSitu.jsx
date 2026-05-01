@@ -4,6 +4,7 @@ import './EatSitu.css';
 
 import safety from '../assets/safetyyy.png';
 import bg_c from '../assets/Vector_situ_bg.svg';
+import { Link } from 'react-router-dom';
 
 const EatSitu = () => {
   const [situations, setSituations] = useState([]);
@@ -35,22 +36,33 @@ const EatSitu = () => {
 
     <div className="eat-situ-container">
       <header className="header">
+         <Link 
+    to="/parenting" 
+    // key={item.id} 
+    style={{ textDecoration: 'none', display: 'block' }}>
+
         <button className="back-button">‹</button>
+    </Link>
         <h1 className="header-title">Situations</h1>
       </header>
 
       <h2 className="section-title">Explore Eating & Mealtime Situations</h2>
       
-      {loading ? (
-        <p>Loading situations...</p>
-      ) : (
-        situations.map((item) => (
-          <button key={item.id} className="situation-btn">
-            <span>{item.title}</span>
-            <span className="arrow-pink">›</span>
-          </button>
-        ))
-      )}
+      
+          {situations.map((item) => (
+  <Link 
+    to="/situation1" 
+    key={item.id} 
+    style={{ textDecoration: 'none', display: 'block' }} // Added display: block
+  >
+    {/* Change <button> to <div> */}
+    <div className="situation-btn">
+      <span>{item.title}</span>
+      <span className="arrow-pink">›</span>
+    </div>
+  </Link>
+))}
+
 
      
       {/* <h2 className="section-title">Safety & Concerns</h2>
@@ -143,8 +155,9 @@ const EatSitu = () => {
       <p className="expert-signature">— Dr. Sandy Kamal<br/>Child Behavior Specialist</p>
     </div>
   </div>
-
+<Link to="/experts" style={{ textDecoration: 'none' }}>
   <button className="ask-expert-btn">Ask Expert</button>
+  </Link>
 </div>
 {/* </div> */}
 

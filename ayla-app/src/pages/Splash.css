@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.splash-container {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: #fff; */
+  padding: 20px;
+  text-align: center;
+}
+
+.language-selection{
+    margin-top: 320px;
+}
+
+.logo-circle {
+  width: 120px;
+  height: 120px;
+  background-color: #fce4e9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(216, 67, 97, 0.1);
+}
+
+.logo-text {
+  color: #d84361;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.welcome-text {
+  /* font-size: 22px;
+  color: #6b5e71; */
+  margin-bottom: 5px;
+  font-family: Poppins;
+  color: white;
+  font-size:20px ;
+}
+
+.welcome-text-ar {
+  font-size: 24px;
+  color: #6b5e71;
+  margin-bottom: 30px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 280px;
+}
+
+.lang-btn {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  background-color: #f3f3f3;
+  /* color: white; */
+  color: #b03a5b;
+
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.lang-btn:hover {
+  background-color: #d84361;
+  transform: translateY(-2px);
+}
+
+.ar-font {
+  font-family: Arial, sans-serif; /* Best for quick Arabic rendering */
+}
+
+.splash{
+    position: absolute;
+    z-index: -1;
+}

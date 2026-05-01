@@ -20,7 +20,6 @@ const Playgrounds = () => {
 
     const { data, error } = await Supabase
       .from('Discover')
-    //   .select('title, km, locate')
     .select('*')
       .eq('category', 'kid-friendly'); 
 
@@ -55,7 +54,9 @@ const Playgrounds = () => {
           >
             
             <div className="place_img_container">
-              <img src={kidsStationImg} alt={place.title} className="place_img" />
+             
+              <img src={place.img_card} alt={place.title} className="place_img" />
+
             </div>
             <div className="place_info">
               <h3 className="place_name">{place.title}</h3>

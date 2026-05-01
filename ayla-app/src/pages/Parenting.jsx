@@ -92,7 +92,7 @@ const Parenting = () => {
         <div className="situations_grid">
           {commonSituations.map(item => (
             <div key={item.id} className="situation_card">
-              <Link to={`/situation1`} className="situation_title" style={{textDecoration: "none"}} >
+              <Link to={`/eatsitu`} className="situation_title" style={{textDecoration: "none", display: "block"}} >
               <img className="situation_icon" src={item.icon} alt={item.title} />
               <p className="situation_title">{item.title}</p>
           </Link>

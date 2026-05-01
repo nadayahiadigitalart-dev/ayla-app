@@ -24,6 +24,9 @@ import Community from './pages/Community';
 import Experts from './pages/Experts';
 import Premium from './pages/Premium';
 import EatSitu from './pages/EatSitu';
+import Podcast from './pages/Podcast';
+import Splash from './pages/Splash';
+import Creative from './pages/Creative';
 
 
 
@@ -33,7 +36,8 @@ import EatSitu from './pages/EatSitu';
     return ( 
         <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Onboarding />} />
+            <Route path='/' element={<Splash />} />
+            <Route path='/onboarding' element={<Onboarding />} />
             <Route path='/onboarding2' element={<Onboarding2 />} />
             <Route path='/onboarding3' element={<Onboarding3 />} />
             <Route path='/signin' element={<Signin />} />
@@ -53,17 +57,10 @@ import EatSitu from './pages/EatSitu';
             <Route path='/podcast' element={<PodcastPage />} /> 
             <Route path='/community' element={<Community />} /> 
             <Route path='/experts' element={<Experts />} />
-              <Route path='/premium' element={<Premium />} />
-            <Route path='/eatsituations' element={<EatSitu />} />
-
-
-
-
-
-
-
-
-            
+            <Route path='/premium' element={<Premium />} />
+            <Route path='/eatsitu' element={<EatSitu />} />
+            <Route path='/podcast' element={<Podcast />} />
+            <Route path='/creative' element={<Creative />} />
 
 
 

@@ -22,7 +22,7 @@ const Navbar = () => {
     { name: 'Discover', icon: searchIcon, path: '/discover' },
     { name: 'Parenting', icon: ideaIcon, path: '/parenting' },
     { name: 'Community', icon: communityIcon, path: '/community' },
-    { name: 'Favourite', icon: heartIcon, path: '/favourite' },
+    // { name: 'Favourite', icon: heartIcon, path: '/favourite' },
   ];
 
 //   const handleNavigation = (index, path) => {
