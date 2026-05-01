@@ -49,6 +49,7 @@ const Parenting = () => {
       title: 'Creative activities',
       description: 'Encourage creativity and improve hand coordination.',
       image: creativeActImg,
+      path: '/creative'
     },
   ];
     return ( <>
@@ -112,7 +113,7 @@ const Parenting = () => {
             <li> no words by age two</li>
             <li> no eye contact</li>
             <li> no response to name</li>
-            <li>• repetitive unusual behaviors</li>
+            <li> repetitive unusual behaviors</li>
           </ul>
         </div>
       </section>

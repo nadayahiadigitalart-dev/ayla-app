@@ -88,7 +88,7 @@ const Home = () => {
         
 
         <div className="expert-container">
-      <h2 className="section-title">Talk to Parenting Experts</h2>
+      <p className="section-titlee">Talk to Parenting Experts</p>
       
       <div className="expert-card">
        
@@ -96,7 +96,7 @@ const Home = () => {
         
        
         <div className="card-content">
-          {/* <h3 className="card-title">Ask Parenting Experts</h3> */}
+         
           <p className="card-description">
             Get answers from pediatricians, psychologists, and child development specialists
           </p>
